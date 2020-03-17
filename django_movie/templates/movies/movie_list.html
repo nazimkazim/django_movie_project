@@ -1,7 +1,8 @@
 
         {% extends 'movies/base.html' %} 
+        {% block header %} bg1 {% endblock header %}
         
-                    {% block content %}
+                    {% block movie %}
                     <div class="left-ads-display col-lg-9">
                         <div class="row">
                         {% for movie in movie_list %}
@@ -37,5 +38,5 @@
                         </div>-->
                     </div>
                 
-        {% endblock content%}
+        {% endblock movie%}
         
